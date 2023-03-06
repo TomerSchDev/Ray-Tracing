@@ -1,0 +1,49 @@
+{
+
+"file-name":"custom-image-2.ppm",
+"camara":{
+    "lookfrom":[13, 2, 3],
+    "lookat":[0, 0, 0],
+    "vup":[0, 1, 0],
+    "vfov":20,
+    "aspect_ratio":1,
+    "aperture":0.1,
+    "focus_dist":10
+    },
+    "world":[
+      {
+        "center-point":[-8.1,0.2,-2.4],
+        "radios":0.4,
+        "material":{
+          "type":"metal",
+          "color":[64,102,45],
+          "fuzz":0.1
+        }
+      },
+      {
+        "center-point":[-5.4,0.2,-9],
+        "radios":0.7,
+        "material":{
+          "type":"lambertian",
+          "color":[99,208,254]
+        }
+      },
+      {
+        "center-point":[-3.6,0.2,-1.8],
+        "radios":0.6,
+        "material":{
+          "type":"metal",
+          "color":[97,127,164],
+          "fuzz":0.3
+        }
+      },{
+        "center-point":[6.3,0.2,-5.4],
+        "radios":1,
+        "material":{
+          "type":"dielectric",
+          "index":0.6
+        }
+      }
+      
+    ]
+}

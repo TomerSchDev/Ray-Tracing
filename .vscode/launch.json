@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "enter program name, for example ${workspaceFolder}/a.out",
-            "args": [],
+            "args": ["example.json"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

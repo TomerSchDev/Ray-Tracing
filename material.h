@@ -50,6 +50,7 @@ class metal : public material {
 };
 class dielectric : public material {
     public:
+        dielectric() : ir(random_double(1,2)) {}
         dielectric(double index_of_refraction) : ir(index_of_refraction) {}
 
         virtual bool scatter(
@@ -76,7 +77,7 @@ class dielectric : public material {
 
     public:
         double ir; // Index of Refraction
-    private:
+       private:
         static double reflectance(double cosine, double ref_idx) {
             // Use Schlick's approximation for reflectance.
             auto r0 = (1-ref_idx) / (1+ref_idx);
